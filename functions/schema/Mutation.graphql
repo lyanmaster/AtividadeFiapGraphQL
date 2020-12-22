@@ -7,4 +7,15 @@ type Mutation {
     preco: Float
     datacadastro: String
   ): [Produto]
+
+  excluirProduto(id: Int): Produto
+
+  alterarProduto(
+    id: Int
+    nomeproduto: String
+    descricao: String
+    fornecedor: String
+    preco: Float
+    datacadastro: String
+  ): Produto
 }
